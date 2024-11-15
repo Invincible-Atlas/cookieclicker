@@ -16862,7 +16862,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.ErrorFrame();
+						if (top!=self) console.log("Oops, you're using the wrong address, luckily it doesn't matter!");
 						else
 						{
 							console.log('[=== '+choose([
